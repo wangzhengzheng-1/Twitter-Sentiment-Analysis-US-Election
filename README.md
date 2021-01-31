@@ -2,13 +2,13 @@
 ### Background:
 Sentiment Analysis is a branch of Natural Language Processing (NLP) that allows us to determine algorithmically whether a statement or document is “positive” or “negative”. Sentiment analysis is a technology of increasing importance in the modern society as it allows individuals and organizations to detect trends in public opinion by analyzing social media content. Keeping abreast of socio-political developments is especially important during periods of policy shifts such as election years, when both electoral candidates and companies can benefit from sentiment analysis by making appropriate changes to their campaigning and business strategies respectively. The purpose of this assignment is to compute the sentiment of text information - in our case, tweets posted recently on US Presidential Elections 2020 - and answer the research question: “What can public opinion on Twitter tell us about the US political landscape in 2020?” The goal is to essentially use sentiment analysis on Twitter data to get insight into the 2020 American Elections. Central to sentiment analysis are techniques first developed in text mining. Some of those techniques require a large collection of classified text data often divided into two types of data, a training data set and a testing data set. The training data set is further divided into data used solely for the purpose of building the model and data used for validating the model. The process of building a model is iterative, with the model being successively refined until an acceptable performance is achieved. The model is then used on the testing data in order to calculate its performance characteristics.
 ### 1. Data cleaning : 
-The tweets, as given, are not in a form amenable to analysis – there is too much ‘noise’. Therefore, the first step is to “clean” the data. Design a procedure that prepares the Twitter data for analysis by satisfying the requirements below. \n
-o All html tags and attributes (i.e., /<[^>]+>/) are removed. \n
-o Html character codes (i.e., &...;) are replaced with an ASCII equivalent.
-o All URLs are removed.
-o All characters in the text are in lowercase.
-o All stop words are removed. Be clear in what you consider as a stop word.
-o If a tweet is empty after pre-processing, it should be preserved as such.
+The tweets, as given, are not in a form amenable to analysis – there is too much ‘noise’. Therefore, the first step is to “clean” the data. Design a procedure that prepares the Twitter data for analysis by satisfying the requirements below.  
+o All html tags and attributes (i.e., /<[^>]+>/) are removed.  
+o Html character codes (i.e., &...;) are replaced with an ASCII equivalent.  
+o All URLs are removed.  
+o All characters in the text are in lowercase.  
+o All stop words are removed. Be clear in what you consider as a stop word.  
+o If a tweet is empty after pre-processing, it should be preserved as such.  
 
 ### 2. Exploratory analysis :
 o Design a simple procedure that determines the political party (Republican Party, Democratic Party and Others) of a given tweet and apply this procedure to all the tweets in the 2020 US elections dataset. A suggestion would be to look at relevant words and hashtags in the tweets that identify to certain political parties or candidates. What can you say about the distribution of the political affiliations of the tweets?
